@@ -1,0 +1,5 @@
+<div (click)="numberClick()" 
+ngClass="{
+    [twitterBlack]: counter % 2 === 0;
+    [twitterColor]: counter % 2 !== 0;
+}">{{counter}}</div>
