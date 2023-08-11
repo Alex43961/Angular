@@ -1,4 +1,9 @@
-<svg (mousewheel)="onMouseWheel($event)" [attr.height] = "height" [attr.width] = "width">
-<circle cx="50" cy="50" [attr.r]="circleRadius"[attr.stroke] = "stroke" stroke-width="4" [attr.fill]="fill" />
-</svg>
+<input type="color" name="colorInput" id="colorInput" [(ngModel)] = "fill"  >
+<div></div>
+    <svg (wheel)="onMouseWheel($event)" [attr.height] = "height" [attr.width] = "width" style="margin-top: 40px;" >
+     <rect (contextmenu)="randomBackground()" width="500" height="500" style="stroke-width:3;stroke:rgb(0,0,0);" [style.fill]="rectangleFill"/>
+<circle (dblclick)="toggleOpacity()" cx="250" cy="250" [attr.r]="circleRadius"[attr.stroke] = "stroke" stroke-width="4" [attr.fill]="fill" [class.isTransparent] = "isTransparent"/>
+
+
+
 
