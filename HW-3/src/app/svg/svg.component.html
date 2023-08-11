@@ -1,9 +1,18 @@
 <input type="color" name="colorInput" id="colorInput" [(ngModel)] = "fill"  >
 <div></div>
+
     <svg (wheel)="onMouseWheel($event)" [attr.height] = "height" [attr.width] = "width" style="margin-top: 40px;" >
      <rect (contextmenu)="randomBackground()" width="500" height="500" style="stroke-width:3;stroke:rgb(0,0,0);" [style.fill]="rectangleFill"/>
 <circle (dblclick)="toggleOpacity()" cx="250" cy="250" [attr.r]="circleRadius"[attr.stroke] = "stroke" stroke-width="4" [attr.fill]="fill" [class.isTransparent] = "isTransparent"/>
+    </svg>
 
 
+  <div>
+    <span>Circle color {{fill}} </span>
+    <br>
+    <span>Opacity: {{ isTransparent ? 'opacity' : 'not opacity' }}</span>
+    <br>
+    <span>The number of changes opacity: {{opacityCounter}}</span>
+  </div>  
 
 
