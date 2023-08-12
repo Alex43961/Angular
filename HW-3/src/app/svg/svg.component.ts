@@ -14,8 +14,9 @@ export class SVGComponent {
   circleRadius = 100;
   isTransparent: boolean = false;
   rectangleFill = "aliceblue";
-  fillCounter = 0;
   opacityCounter = 0;
+  backgroundCounter = 0;
+
 
 
   onMouseWheel(event: WheelEvent) {
@@ -27,7 +28,7 @@ export class SVGComponent {
     }
   }
   toggleOpacity() {
-    this.opacityCounter +=1;
+    this.opacityCounter += 1;
     this.isTransparent = !this.isTransparent;
   }
 
@@ -38,5 +39,9 @@ export class SVGComponent {
 
     this.rectangleFill = randomColor;
   }
-  
+  changeBackground(event: any) {
+    this.backgroundCounter += 1;
+
+  }
+
 }
