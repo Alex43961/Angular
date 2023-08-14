@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { AvatarComponent } from './user/avatar/avatar.component';
-import { AvatarsettengsComponent } from './user/avatarsettengs/avatarsettengs.component';
+import { AvatarsettingsComponent } from './user/avatarsettings/avatarsettings.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,13 +14,14 @@ import { AvatarsettengsComponent } from './user/avatarsettengs/avatarsettengs.co
     AppComponent,
     UserComponent,
     AvatarComponent,
-    AvatarsettengsComponent,
- 
- 
+    AvatarsettingsComponent,
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

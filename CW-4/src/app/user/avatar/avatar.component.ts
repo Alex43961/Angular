@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-avatar',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./avatar.component.css']
 })
 export class AvatarComponent {
-width:number = 300;
-height: number = 300;
-src: string = "/assets/pngwing.com.png"
+ @Input() width: number | undefined;
+ @Input() height: number | undefined;
+  src = "/assets/avatar.png"
 }
