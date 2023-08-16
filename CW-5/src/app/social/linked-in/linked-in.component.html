@@ -1,7 +1,11 @@
-<div (click)="numberClick()" 
-[height.px] = "height"
-[width.px] = "width"
-ngClass="{
-    [linkedInBlack]: counter % 2 === 0;
-    [linkedInColor]: counter % 2 !== 0;
-}" >{{counter}}</div>
+<div class="linkedIn-wrapper">
+    <div (click)="numberClick()" 
+[style.height.px] = "height"
+[style.width.px] = "width"
+[ngClass]="{
+    'linkedInBlack': counter % 2 === 0,
+    'linkedInColor': counter % 2 !== 0
+}"></div>
+<div class="linkedIn-counter">Clicks: {{counter}}</div>
+</div>
+

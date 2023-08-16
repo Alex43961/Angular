@@ -1,1 +1,7 @@
-<p>opened-socials works!</p>
+<div (contextmenu)="sumDecrease()" (click)="increase()">
+    <app-twitter></app-twitter>
+    <app-linked-in></app-linked-in>
+</div>
+<span class="sumClicksCounter">
+    Clicks: {{sumClicks}}
+</span>

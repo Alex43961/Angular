@@ -11,6 +11,8 @@ width = 50;
 counter = 0;
 
 numberClick(){
+  this.height +=1;
+  this.width +=1;
 this.counter +=1;
 }
 }

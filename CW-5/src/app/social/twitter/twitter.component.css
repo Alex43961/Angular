@@ -1,8 +1,10 @@
 .twitterBlack {
-    background-image: "/assets/twitter-black.png";
+    background-size: contain;
+    background-image: url("../../../assets/twitter-black.png");
     background-repeat: no-repeat;
 }
 .twitterColor {
-    background-image: "/assets/twitter-col.png";
+    background-size: contain;
+    background-image: url("../../../assets/twitter-col.png");
     background-repeat: no-repeat
     }

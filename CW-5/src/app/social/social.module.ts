@@ -10,15 +10,20 @@ import { PinterestComponent } from './pinterest/pinterest.component';
 
 @NgModule({
   declarations: [
-    
-  
+
+
     ClosedSocialComponent,
-            TwitterComponent,
-            LinkedInComponent,
-            PinterestComponent
+    TwitterComponent,
+    LinkedInComponent,
+    PinterestComponent
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ClosedSocialComponent,
+    TwitterComponent,
+    LinkedInComponent
   ]
 })
 export class SocialModule { }

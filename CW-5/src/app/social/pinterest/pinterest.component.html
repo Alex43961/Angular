@@ -1,4 +1,10 @@
-<div (click)="numberClick()" ngClass="{
-    [pinterestBlack]: counter % 2 === 0;
-    [pinterestColor]: counter % 2 !== 0;
-}">{{counter}}</div>
+<div class="pinterest-wrapper">
+    <div (click)="numberClick()" 
+[style.height.px] = "height"
+[style.width.px] = "width"
+[ngClass]="{
+    'pinterestBlack': counter % 2 === 0,
+    'pinterestColor': counter % 2 !== 0
+}"></div>
+<div class="pinterest-counter">Clicks: {{counter}}</div>
+</div>

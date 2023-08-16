@@ -1,8 +1,10 @@
 .pinterestBlack {
-    background-image: "/assets/pinterest-black.png";
+    background-size: contain;
+    background-image: url("../../../assets/pinterest-black.png");
     background-repeat: no-repeat;
 }
 .pinterestColor {
-    background-image: "/assets/pinterest-col.png";
+    background-size: contain;
+    background-image: url("../../../assets/pinterest-col.png");
     background-repeat: no-repeat;
 }

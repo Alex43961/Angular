@@ -1,8 +1,10 @@
 .linkedInBlack {
-    background-image: "/assets/linkedIn-black.png";
+    background-size: contain;
+    background-image: url("../../../assets/linkedIn-black.png");
     background-repeat: no-repeat;
 }
 .linkedInColor {
-    background-image: "/assets/linkedIn-col.png";
+    background-size: contain;
+    background-image: url("../../../assets/linkedIn-col.png");
     background-repeat: no-repeat;
 }

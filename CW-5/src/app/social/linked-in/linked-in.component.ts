@@ -6,11 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./linked-in.component.css']
 })
 export class LinkedInComponent {
-height = 50;
-width = 50;
-counter = 0;
+  height = 50;
+  width = 50;
+  counter = 0;
 
-numberClick(){
-this.counter +=1;
-}
+  decrement() {
+    this.counter -=1;
+  }
+
+  numberClick() {
+    this.height += 1;
+    this.width += 1;
+    this.counter += 1;
+  }
 }
