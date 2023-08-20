@@ -1,0 +1,15 @@
+.app-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;   
+}
+.moviesSection1 {
+    width: 50%;
+    background-color: burlywood;
+    padding: 50px;
+}
+.moviesSection2 {
+    width: 50%;
+    background-color: aqua;
+    padding: 50px;
+}

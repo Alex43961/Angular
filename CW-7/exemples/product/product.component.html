@@ -1,0 +1,11 @@
+<div>
+  <img [src]='src' height='100'>
+  <div> name: {{name}} </div>
+
+  <div *ngIf='context === "base"; else amount'>
+    <button> purchase </button>
+  </div>
+  <ng-template #amount>
+    <input type='range'>
+  </ng-template>
+</div>

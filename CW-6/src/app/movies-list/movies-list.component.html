@@ -1,0 +1,12 @@
+
+
+  <div class="moviesSection1">
+    <div class="moviesList">
+    <div class="movie" *ngFor="let movie of this.movies">
+        <img [src]="this.movie.poster" alt="Something went wrong">
+        <p class="title" *ngIf="showMovieTitles">{{this.movie.title}}</p>
+    </div>
+</div>
+    <app-add-movie></app-add-movie>
+    <app-remove-film></app-remove-film>
+  </div>
