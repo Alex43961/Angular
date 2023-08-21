@@ -8,7 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { AddMovieComponent } from './add-movie/add-movie.component';
 import { RemoveFilmComponent } from './remove-film/remove-film.component';
 import { MoviesListComponent } from './movies-list/movies-list.component';
-
+import { TitleListComponent } from './title-list/title-list.component';
+import { LoggingService } from './logging.service';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MoviesListComponent } from './movies-list/movies-list.component';
     AddMovieComponent,
     RemoveFilmComponent,
     MoviesListComponent,
+    TitleListComponent,
    
 
   ],

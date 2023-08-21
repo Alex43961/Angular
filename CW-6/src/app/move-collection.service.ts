@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Movies } from './data-movies';
+import { LoggingService } from './logging.service';
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -14,19 +17,19 @@ export class MoveCollectionService {
       poster: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNa8uE0GpxYiy-jDQS6peGIchTECQv5Qlmg&usqp=CAU'
     }
   ]
-  constructor() { }
+  constructor(private logService: LoggingService) { }
   getMovies():Movies[] {
     return this.moviesCollection;
   }
   addMovies(title: string, poster: string) {
     this.moviesCollection.push({ title, poster });
-    console.log(`Added movie: ${title}`);
+    this.logService.write(`Added movie: ${title}`);
   }
   removeMovies(title: string) {
     const index = this.moviesCollection.findIndex(movie => movie.title === title);
     if (index !== -1) {
       this.moviesCollection.splice(index, 1);
-      console.log(`Removed move: ${title}`);
+      this.logService.write(`Removed movie: ${title}`);
 
     }
   }
