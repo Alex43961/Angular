@@ -1,0 +1,28 @@
+<form #myForm='ngForm' novalidate>
+  <div>
+    <label>Name</label>
+    <input name='name' ngModel #name='ngModel' required>
+    <div class='errorMsg' [class.invalid]='!(name.valid || name.untouched)'>
+      Invalid name
+    </div>
+  </div>
+  <div>
+    <label>Email</label>
+    <input name='email' #email='ngModel' ngModel required pattern='@'>
+    <div [hidden]='email.valid || email.untouched'>
+      Invalid email
+    </div>
+  </div>
+  <div>
+    <label>Phone</label>
+    <input name='phone' ngModel #phone='ngModel' required pattern='[0-9]{7}'>
+    <div [hidden]='phone.valid || phone.untouched'>
+      Invalid phone number
+    </div>
+  </div>
+  <div>
+    <button [disabled]='myForm.invalid' (click)='submit(myForm)'>Add</button>
+  </div>
+</form>
+
+<div> email: {{myForm.value.email}}</div>
